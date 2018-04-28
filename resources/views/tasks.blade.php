@@ -8,7 +8,9 @@
           <div class="col-sm-6">
             <div class="row">
               <div class="col">
-                <h3>Fil d'actualités</h3>
+                <div class="card">
+                  <h3>Fil d'actualités</h3>
+                </div>
               </div>
             </div>
           </div>
