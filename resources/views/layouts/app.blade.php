@@ -40,7 +40,7 @@
       <a class="navbar-brand" href="#">Menu principal</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav justify-content-center">
+      <ul class="nav navbar-nav justify-content-center">
         <li class="active"><a href="#">Accueil</a></li>
         <li><a href="#">Profil</a></li>
         <li><a href="#">Mon historique</a></li>
