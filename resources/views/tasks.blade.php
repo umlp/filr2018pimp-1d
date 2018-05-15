@@ -25,8 +25,8 @@
               <p>Description succinte du bar.</p>
               <hr class="my-4">
               <p>Ambiance, notation, etc...</p>
-              <p style="margin-top:-25px">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+              <p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Voir la page du bar</a>
               </p>
             </div>
           </div>
