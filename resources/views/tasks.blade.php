@@ -30,7 +30,7 @@
             </div>
           </div>
           <div class="col-sm-3">
-            <div class="hidden-sm-down">
+            <div class="d-none d-sm-block">
               <button type="button" class="btn btn-primary">Organiser son barathon</button>
             </div>
           </div>
@@ -53,7 +53,7 @@
             </div>
           </div>
           <div class="col-sm-3">
-            <div class="hidden-sm-down">
+            <div class="d-none d-sm-block">
               <span>
                 <input type="text" placeholder="Recherche">
                 <button type="button" class="btn btn-info">Rechercher</button>
