@@ -20,12 +20,14 @@
             <img src="https://cuteoverload.files.wordpress.com/image7-967-14-_tphq.jpg" width="100%"/>
           </div>
           <div class="col-sm-4">
-            <div class="jumbotron">
+            <div class="jumbotron" style="padding: 25px">
               <h3>Nom du bar</h1>
-              <p class="lead">Description succinte du bar.</p>
+              <p>Description succinte du bar.</p>
               <hr class="my-4">
-              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-              <button type="button" class="btn btn-primary">Voir la page</button>
+              <p>Ambiance, notation, etc...</p>
+              <p style="margin-top:-25px">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+              </p>
             </div>
           </div>
           <div class="col-sm-2">
