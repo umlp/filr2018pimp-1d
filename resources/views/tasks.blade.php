@@ -16,7 +16,7 @@
           <div class="col-sm-3">
           </div>
           <div class="col-sm-3">
-            <img src="https://cuteoverload.files.wordpress.com/image7-967-14-_tphq.jpg" width="100%"/>
+            <img src="alice.jpg" width="100%"/>
           </div>
           <div class="col-sm-3">
             <div class="jumbotron" style="padding: 25px">
