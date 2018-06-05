@@ -54,6 +54,7 @@ Route::group(['middleware' => ['web']], function () {
         return redirect('/');
     });
 
-    Route::get('/creerBar', function() {
-        return view('creerBar');
+    Route::get('creerBar', function() {
+        return View::make('creerBar');    
+    }
 });
