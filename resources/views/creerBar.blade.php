@@ -13,7 +13,7 @@
             <label for="loc">Localisation</label>
             <input class="form-control" type="text" name="loc">
             <label for="desc">Description</label>
-            <input type="textarea" name="desc" rows="10">
+            <textarea class="form-control" name="desc" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-success">Créer</button>
     </form>
