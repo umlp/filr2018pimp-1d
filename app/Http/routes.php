@@ -59,3 +59,7 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/creerBar', function() {
+    return view('creerBar');
+});
