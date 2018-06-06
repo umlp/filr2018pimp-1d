@@ -33,6 +33,11 @@
             <div class="d-none d-sm-block">
                 <button type="button" class="btn btn-primary">Organiser son barathon</button>
             </div>
+            <div class="d-none d-sm-block">
+                <a href="creerBar">
+                    <button type="button" class="btn btn-primary">Créer son bar</button>
+                </a>
+            </div>
         </div>
     </div>
     <div class="row" style="margin-top: 10px;">
