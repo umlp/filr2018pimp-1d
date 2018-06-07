@@ -33,12 +33,12 @@
 		      description TEXT NOT NULL,
 		      image TEXT
 		    )";
-	$db = new PDO("pgsql:./bars.sql");
-	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	$db->query($requete);
+	$dbconn = pg_connect("host=ec2-54-195-246-59.eu-west-1.compute.amazonaws.com dbname=dcun22aii01mbq user=pjmwjmzqcbgozo password=019e0d43393738dc02b8a19f80e82e873dd739d9a45ab90aef5713128dcb0811") or die('Connexion impossible : '.pg_last_error());
+	$result = pg_query($requete) or die('Echec de la requête : '.pg_last_error());
 	//$db->query("INSERT INTO dictionnaire (terme, definition, fichier) VALUES ('chat', 'Petit animal fourbe à fourrure.', 'fiche1.txt')");
 	//$db->query("INSERT INTO dictionnaire (terme, definition, fichier) VALUES ('asi', 'Chouette département.', 'fiche2.txt')");
-	unset($db);
+    pg_free($result);
+    pg_close($dbconn);
 	echo "<p>Table créée. Fiches 'chat' et 'asi' insérées.</p>";
       }
       catch(PDOException $e)
