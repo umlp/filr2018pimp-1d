@@ -33,7 +33,7 @@
 		      description TEXT NOT NULL,
 		      image TEXT
 		    )";
-	$db = new PDO("sqlite:./bars.sqlite");
+	$db = new PDO("pgsql:./bars.sql");
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$db->query($requete);
 	//$db->query("INSERT INTO dictionnaire (terme, definition, fichier) VALUES ('chat', 'Petit animal fourbe à fourrure.', 'fiche1.txt')");
