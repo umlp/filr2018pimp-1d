@@ -33,6 +33,9 @@
             )');
     
     $insert = DB::insert('insert into bars (nom, description) values ("Test", "Yolo")', array(1, 'Arnaud'));
-    
+    $select = DB::select('select * from bars', array(1));
 
+    foreach ($select as $data) {
+        echo '<p>'.$data.'</p>';
+    }
 ?>
