@@ -23,19 +23,19 @@
 </div>
 @endsection
 
-<?php
+<!-- <?php
 
-    $requete = DB::statement('CREATE TABLE IF NOT EXISTS bars (
-                id INTEGER PRIMARY KEY, 
-                nom TEXT NOT NULL,
-                description TEXT NOT NULL,
-                image TEXT
-            )');
+    // $requete = DB::statement('CREATE TABLE IF NOT EXISTS bars (
+    //             id INTEGER PRIMARY KEY, 
+    //             nom TEXT NOT NULL,
+    //             description TEXT NOT NULL,
+    //             image TEXT
+    //         )');
     
-    $insert = DB::insert('insert into bars (nom, description) values ("Test", "Yolo")', array(1, 'Arnaud'));
-    $select = DB::select('select * from bars', array(1));
+    // $insert = DB::insert('insert into bars (nom, description) values ("Test", "Yolo")', array(1, 'Arnaud'));
+    // $select = DB::select('select * from bars', array(1));
 
-    foreach ($select as $data) {
-        echo '<p>'.$data.'</p>';
-    }
-?>
+    // foreach ($select as $data) {
+    //     echo '<p>'.$data.'</p>';
+    // }
+?> -->
