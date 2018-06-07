@@ -25,17 +25,14 @@
 
 <?php
 
-    $requete = "CREATE TABLE IF NOT EXISTS bars (
+    $requete = DB::statement('CREATE TABLE IF NOT EXISTS bars (
                 id INTEGER PRIMARY KEY, 
                 nom TEXT NOT NULL,
                 description TEXT NOT NULL,
                 image TEXT
-            )";
-    $dbconn = pg_connect("host=ec2-54-195-246-59.eu-west-1.compute.amazonaws.com dbname=dcun22aii01mbq user=pjmwjmzqcbgozo password=019e0d43393738dc02b8a19f80e82e873dd739d9a45ab90aef5713128dcb0811") or die('Connexion impossible : '.pg_last_error());
-    $result = pg_query($requete) or die('Echec de la requête : '.pg_last_error());
-    //$db->query("INSERT INTO dictionnaire (terme, definition, fichier) VALUES ('chat', 'Petit animal fourbe à fourrure.', 'fiche1.txt')");
-    //$db->query("INSERT INTO dictionnaire (terme, definition, fichier) VALUES ('asi', 'Chouette département.', 'fiche2.txt')");
-    pg_free($result);
-    pg_close($dbconn);
+            )');
+    
+    $insert = DB::insert('insert into bars (nom, description) values ("Test", "Yolo")', array(1, 'Arnaud'));
+    
 
 ?>
